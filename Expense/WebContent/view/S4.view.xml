@@ -1,0 +1,56 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	xmlns:c="sap.ui.core" xmlns:co="sap.ui.commons" xmlns:col="sap.ui.commons.layout"
+	controllerName="Expense.view.S4" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Repairs and Maintenance" design="Bold" showNavButton="true" navButtonPress="onBack">
+		<html:style>
+	   .sapMITBTab{
+	   min-width:5rem;
+	   width:99px !important;
+    }
+    .sapMITBText{
+	min-width:5rem;
+	width:99px !important;
+     }
+	</html:style>
+		<content>
+		<ObjectHeader id="hjksagdvfkuj">
+		<attributes>
+      <ObjectAttribute text="" id="adff"/>
+      </attributes>
+      </ObjectHeader>
+		<IconTabBar id="view2" select="onSelectone" >  
+    <items>
+      <IconTabFilter
+      icon="sap-icon://print"
+        iconColor="Positive" id="itab093"
+        text="Office Equipments"
+        key="093">
+			</IconTabFilter>
+			<IconTabFilter
+			icon="sap-icon://vehicle-repair"
+        iconColor="Positive" id="itab222"
+        text="Vehicles"
+        key="222">
+			</IconTabFilter>
+			<IconTabFilter
+			icon="sap-icon://action-settings"
+        iconColor="Positive" id="itab104"
+        text="Others"
+        key="104">
+			</IconTabFilter>
+			</items>
+			</IconTabBar>
+		</content>
+		<footer>
+			<Bar>
+				<contentRight>
+				<Button text="Exit" type="Reject" press="onCancel" />
+					<Button text="Reset" type="Emphasized" press="onRset"
+						 />
+					<Button text="Submit" type="Accept" press="onSave"  />
+				</contentRight>
+			</Bar>
+		</footer>
+	</Page>
+</core:View>

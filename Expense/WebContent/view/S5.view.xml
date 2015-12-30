@@ -1,0 +1,55 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	xmlns:c="sap.ui.core" xmlns:co="sap.ui.commons" xmlns:col="sap.ui.commons.layout"
+	controllerName="Expense.view.S5" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Electricity" design="Bold" showNavButton="true" navButtonPress="onBack">
+		<html:style>
+	   .sapMITBTab{
+	   min-width:5rem;
+	   width:82px !important;
+    }
+    .sapMITBText{
+	min-width:5rem;
+	width:82px !important;
+     }
+	</html:style>
+		<content>
+		<ObjectHeader id="hjksagdvfkuj">
+		<attributes>
+      <ObjectAttribute text="" id="adff"/>
+      </attributes>
+      </ObjectHeader>
+		<IconTabBar id="view2" select="onSelectone" >  
+    <items>
+      <IconTabFilter
+      icon="sap-icon://feed"
+        iconColor="Positive" id="itab208"
+        text="Towers"
+        key="208">
+			</IconTabFilter>
+			<IconTabFilter
+			icon="sap-icon://iphone-2"
+        iconColor="Positive" id="itab209"
+        text="Small Cells"
+        key="209">
+			</IconTabFilter>
+			<IconTabFilter
+			icon="sap-icon://official-service"
+        iconColor="Positive" id="itab3"
+        text="Office"
+        key="3">
+			</IconTabFilter>
+			</items>
+			</IconTabBar>
+		</content>
+		<footer>
+			<Bar>
+				<contentRight>
+				<Button text="Exit" type="Reject" press="onCancel" />
+					<Button text="Reset" type="Emphasized" press="onRset"/>
+					<Button text="Submit" type="Accept" press="onSave"  />
+				</contentRight>
+			</Bar>
+		</footer>
+	</Page>
+</core:View>

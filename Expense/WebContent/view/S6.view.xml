@@ -1,0 +1,62 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	xmlns:c="sap.ui.core" xmlns:co="sap.ui.commons" xmlns:col="sap.ui.commons.layout"
+	controllerName="Expense.view.S6" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Employee Welfare" design="Bold" showNavButton="true" navButtonPress="onBack">
+		<html:style>
+	   .sapMITBTab{
+	   min-width:5rem;
+	   width:118px !important;
+    }
+    .sapMITBText{
+	min-width:5rem;
+	width:118px !important;
+     }
+	</html:style>
+		<content>
+		<ObjectHeader id="hjksagdvfkuj">
+		<attributes>
+      <ObjectAttribute text="" id="adff"/>
+      </attributes>
+      </ObjectHeader>
+		<IconTabBar id="view2" select="onSelectone" >  
+    <items>
+      <IconTabFilter
+      icon="sap-icon://physical-activity"
+        iconColor="Positive" id="itab019"
+        text="Celebrations"
+        key="019">
+			</IconTabFilter>
+			<IconTabFilter
+			icon="sap-icon://learning-assistant"
+        iconColor="Positive" id="itab022"
+        text="Seminar and Training"
+        key="022">
+			</IconTabFilter>
+			<IconTabFilter
+			icon="sap-icon://basket"
+        iconColor="Positive" id="itab006"
+        text="Refreshments"
+        key="006">
+			</IconTabFilter>
+			<IconTabFilter
+			icon="sap-icon://action-settings"
+        iconColor="Positive" id="itab018"
+        text="Others"
+        key="018">
+			</IconTabFilter>
+			</items>
+			</IconTabBar>
+		</content>
+		<footer>
+			<Bar>
+				<contentRight>
+				<Button text="Exit" type="Reject" press="onCancel" />
+					<Button text="Reset" type="Emphasized" press="onRset"
+						 />
+					<Button text="Submit" type="Accept" press="onSave"  />
+				</contentRight>
+			</Bar>
+		</footer>
+	</Page>
+</core:View>

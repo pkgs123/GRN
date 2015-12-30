@@ -1,0 +1,62 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	xmlns:c="sap.ui.core" xmlns:co="sap.ui.commons" xmlns:col="sap.ui.commons.layout"
+	controllerName="Expense.view.S3" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Miscellaneous" showNavButton="true" navButtonPress="onBack">
+		<html:style>
+			.sapMITBTab{
+			min-width:5rem;
+			width:124px !important;
+			}
+			.sapMITBText{
+			min-width:5rem;
+			width:124px !important;
+			}
+		</html:style>
+		<content>
+			<ObjectHeader id="hjksagdvfkuj">
+				<attributes>
+					<ObjectAttribute text="" id="adff" />
+				</attributes>
+			</ObjectHeader>
+			<IconTabBar id="view2" select="onSelectone">
+				<items>
+					<IconTabFilter icon="sap-icon://bus-public-transport"
+						iconColor="Positive" id="itab215" text="Conveyance" key="215">
+					</IconTabFilter>
+					<IconTabFilter icon="sap-icon://print" iconColor="Positive"
+						id="itab053" text="Printing and Stationary" key="053">
+					</IconTabFilter>
+					<IconTabFilter icon="sap-icon://post" iconColor="Positive"
+						id="itab041" text="Postage and Courier" key="041">
+					</IconTabFilter>
+					<IconTabFilter icon="sap-icon://customer-and-supplier"
+						iconColor="Positive" id="itab110" text="Professional Services"
+						key="110">
+					</IconTabFilter>
+					<IconTabFilter icon="sap-icon://opportunities"
+						iconColor="Positive" id="itab168" text="Sponsorship" key="168">
+					</IconTabFilter>
+					<IconTabFilter icon="sap-icon://retail-store-manager"
+						iconColor="Positive" id="itab075" text="Gifts" key="075">
+					</IconTabFilter>
+					<IconTabFilter icon="sap-icon://loan" iconColor="Positive"
+						id="itab025" text="Donations" key="025">
+					</IconTabFilter>
+					<IconTabFilter icon="sap-icon://action-settings"
+						iconColor="Positive" id="itab086" text="Others" key="086">
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+		</content>
+		<footer>
+			<Bar>
+				<contentRight>
+					<Button text="Exit" type="Reject" press="onCancel" />
+					<Button text="Reset" type="Emphasized" press="onRset" />
+					<Button text="Submit" type="Accept" press="onSave" />
+				</contentRight>
+			</Bar>
+		</footer>
+	</Page>
+</core:View>

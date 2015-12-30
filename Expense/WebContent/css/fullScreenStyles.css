@@ -1,0 +1,10 @@
+.sapMTile{background-color:rgba(255,255,255,0.55);
+-webkit-box-shadow: 7px 7px 20px 0px rgba(0,0,0,0.3);
+-webkit-border-top-left-radius: 2em; 
+-webkit-border-bottom-right-radius: 2em; 
+border-top-left-radius: 2em;
+border-bottom-right-radius: 2em;}
+.sapUshellContainerTitle{color:#980000;font-weight:bold;font-size: 30px;}
+.sapMStdTileTopRow .sapMStdTileIconDiv{color:#980000;}
+.sapMStdTileBottomRow .sapMStdTileTitle {color: #980000;}
+

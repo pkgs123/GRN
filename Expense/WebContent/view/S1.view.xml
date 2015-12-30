@@ -1,0 +1,35 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="Expense.view.S1" xmlns:html="http://www.w3.org/1999/xhtml">
+	
+	<Page
+    title="Payments"
+    enableScrolling="false" showNavButton="true" navButtonPress="onBack">
+	<TileContainer
+      id="container"
+      tileDelete="handleTileDelete"
+     >
+      <StandardTile
+        icon="sap-icon://money-bills"
+        title="Electricity"
+        press="onElectricity"/>
+        <StandardTile
+        icon="sap-icon://expense-report"
+        title="O &#38; M Procurements" press="onWater"/>
+        <StandardTile
+        icon="sap-icon://official-service"
+         title="Repairs &#38; Maintenance" press="onRent"/>
+         <StandardTile
+        icon="sap-icon://employee"
+         title="Employee Welfare" press="onEmployee"/>
+         <StandardTile
+       icon="sap-icon://customer-financial-fact-sheet"
+         title="Local Taxes" press="onLocal"/>
+         <StandardTile
+        icon="sap-icon://task"
+        title="Miscellaneous"  press="onSundry"/>
+     </TileContainer> 
+		</Page> 
+		
+		
+	
+</core:View>
